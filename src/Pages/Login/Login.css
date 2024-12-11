@@ -1,0 +1,36 @@
+/* Botón de inicio de sesión */
+.login-button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #113459;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #0088cc;
+  transform: scale(1.05); /* Reduce the scale to make the animation smaller */
+}
+
+/* Botón verde debajo del botón de inicio de sesión */
+.green-button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #28a745; /* Cambia este color a verde */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+  width: 100%;
+  margin-top: 20px; /* Añadir espacio entre los botones */
+}
+
+.green-button:hover {
+  background-color: #218838; /* Cambia este color a un verde más oscuro */
+  transform: scale(1.05);
+}

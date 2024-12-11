@@ -1,0 +1,94 @@
+.historial-viaje {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.historial-viaje h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.viajes-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Alinea las tarjetas horizontalmente */
+  align-items: center;     /* Alinea las tarjetas verticalmente */
+  width: 30%;             /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.viaje-card {
+  perspective: 1000px;
+  width: 50%;
+  max-width: 300px; /* Ampliar ancho */
+  margin: auto;   /* Centra las tarjetas dentro del contenedor */
+}
+
+.viaje-card-inner {
+  position: relative;
+  width: 300%;
+  height: 300px; /* Ampliar altura */
+  transform-style: preserve-3d;
+  transform: rotateY(0);
+  transition: transform 0.6s ease;
+}
+
+.viaje-card:hover .viaje-card-inner {
+  transform: rotateY(180deg);
+}
+
+.viaje-card-front,
+.viaje-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.viaje-card-front {
+  background-color: #f9f9f9;
+}
+
+.viaje-card-back {
+  background-color: #0d253f; /* Azul más suave */
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.viaje-card h2 {
+  font-size: 22px;
+}
+
+.viaje-card .precio {
+  font-size: 28px;
+  color: #444;
+  margin-top: 10px;
+}
+
+.btn-back {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
